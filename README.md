@@ -21,3 +21,11 @@ Dependencies And How To Run:
 Issue:
 I have done what is required to send a prompt and get response using openAi model but there is an issue which is "Unable to generate response using any available engine."
 All the engines are not Supported in my environment.
+
+Free Engine:-
+text-davinci-003: Another variant of the text-davinci model, which may have different training data or fine-tuning.
+text-curie: This model is designed to balance quality and speed, making it suitable for applications that require quick responses without sacrificing too much on quality.
+text-babbage: This model is optimized for speed and efficiency, making it ideal for scenarios where response time is critical, such as chatbots or real-time applications.
+text-gpt-3.5-turbo: A variant of the GPT-3.5 model optimized for speed and efficiency, providing fast responses while maintaining high-quality text generation.
+text-gpt-3.5: The standard GPT-3.5 model, offering a balance between speed and quality for various natural language processing tasks
+
