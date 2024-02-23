@@ -1,8 +1,6 @@
  Day 5: Designing a prompt to stimulate responses from the OpenAI model.
 
  # Documentation:
-"""
-This script generates a short story using OpenAI's GPT-3 models.
 
 Usage:
 1. Set up your OpenAI API key by assigning it to the `api_key` variable.
