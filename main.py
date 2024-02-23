@@ -1,14 +1,14 @@
 import openai
-
+from openai import OpenAI 
 # Set up your OpenAI API key
-api_key = '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'
+api_key = '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'
 openai.api_key = api_key
 
 # Define your prompt
 prompt = "Write a short story about a detective solving a mystery in a small town."
 
 # List of engines to try
-engines = ["davinci-codex", "davinci-instruct-beta", "text-davinci-003"]
+engines = ['text-codex', 'text-davinci','text-davinci-002']
 
 # Flag to track if a response is generated successfully
 response_generated = False
@@ -32,9 +32,9 @@ for engine in engines:
         # Break out of the loop since a successful response is obtained
         break
 
-    except openai.error.InvalidRequestError as e:
+    except Exception as e:
         # Print error message if the engine is deprecated
-        print(f"The model {engine} has been deprecated:", e)
+        print(f"An error occurred while using the model {engine}: {e}")
 
 if not response_generated:
     print("Unable to generate response using any available engine.")
